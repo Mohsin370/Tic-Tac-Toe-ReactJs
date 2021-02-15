@@ -1,0 +1,115 @@
+.main{
+    width:  900px;
+    height: 630px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    border-radius: 15px;
+    border: 0.5px solid #ccc;  
+
+}
+
+.playerscontainer{
+
+   display: flex;
+   justify-content:center;
+   padding-top: 50px;
+}
+
+
+.players{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 100%;
+}
+
+.p1{
+    display:flex;
+    width: 250px;
+    background-color:white;
+    border: 1px solid #ccc;
+    justify-content:space-between;
+    border-radius: 10px;
+}
+.p1 p{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.status{
+    text-align: center;
+}
+
+.gamecontainer{
+    height: 400px;
+    width: 100%;
+    background-color: #900c3f;
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    margin: auto;
+    width: 350px;
+    height: 320px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/64/Tic-tac-toe.png');
+    background-position: center;
+    background-size: cover;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    text-align: center;
+
+}
+
+.restart{
+    text-align: center;
+    margin-top: 15px;
+}
+.restart button{
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color:rgb(199, 61, 61);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.linedraw{
+    width:0px;
+    border-bottom:10px solid #000;
+    animation:         increase 3s; 
+    animation-fill-mode: forwards;
+    z-index: 100;
+    position: relative;
+    padding-top: 3px;
+  }
+  
+  @keyframes increase {
+      100% {
+          width: 117px;
+      }
+  }
+
+  
+.verticallinedraw{
+    width:10px;
+    height:1px;
+    border-bottom:100px solid #000;
+    animation:         verticalincrease 3s; 
+    animation-fill-mode: forwards;
+    position: relative;
+    padding-top: 3px;
+    z-index: 0;
+  }
+ 
